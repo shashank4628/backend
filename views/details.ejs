@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="club"><%= request.clubName %></div>
-    <img src="<%= request.imagePath1 %>" alt="Product Image">
-    <img src="<%= request.imagePath2 %>" alt="Receipt Image">
-    <button>Approve</button>
-    
-    <a href="" class="delete" data-doc="<%= request._id %>">Decline</a>
+    <img src="<%= request.imagePath1 %>" alt="Product Image" style="width: 150px"><br>
+    <img src="<%= request.imagePath2 %>" alt="Receipt Image" style="width: 150px"><br>
+    <!-- <button>Approve</button> -->
+    <!-- <a href="" class="approve" data-doc="<%= request._id %>"></a> -->
+    <a href="" class="delete" data-doc="<%= request._id %>" style="margin-top: 30px; font-size: 20px">Decline</a>
 
 <script>
     const trashcan= document.querySelector('a.delete');

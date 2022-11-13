@@ -8,12 +8,12 @@ const purchaseSchema = new Schema({
     },
     imagePath1: {
         type: String,
-        default: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/1200px-Lion_waiting_in_Namibia.jpg'
+        default: 'https://m.media-amazon.com/images/I/71m1Tf4cIUL._SY355_.jpg'
         // required: true
     },
     imagePath2: {
         type: String,
-        default: 'https://static.theprint.in/wp-content/uploads/2019/12/27466438332_2b15bea6e2_k-e1575788134164.jpg'
+        default: 'https://4.imimg.com/data4/IM/LO/MY-9807017/bill-receipt-250x250.jpg'
         // required: true
     }
 }, { timestamps: true });
