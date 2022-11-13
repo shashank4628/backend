@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approved Requests</title>
+</head>
+<body>
+    <div class="all-requests">
+        <h2>Approved Requests</h2>
+
+        <% if(approvedRequests.length > 0) { %>
+            <% approvedRequests.forEach(approvedRequest => { %>
+                <div class="club"><%= approvedRequest.clubName %></div>
+                <img src="<%= approvedRequest.imagePath1 %>" alt="Product Image">
+                <img src="<%= approvedRequest.imagePath2 %>" alt="Receipt Image">
+            <% }) %>
+        <% } else { %>
+            <p>There are no approved requests.</p>
+        <% } %>
+
+    </div>
+</body>
+</html>

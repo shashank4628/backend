@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requests</title>
+</head>
+<body>
+    <div class="all-requests">
+        <h4>All Requests</h4>
+
+        <% if(requests.length > 0) { %>
+            <% requests.forEach(request => { %>
+                
+                <a href="/techSecy/requests/<%= request._id %>" style="margin-bottom: 3vw;">
+                    <div class="club"><h3><%= request.clubName %></h3></div>
+                    <!-- <img src="<%= request.imagePath1 %>" alt="Product Image">
+                    <img src="<%= request.imagePath2 %>" alt="Receipt Image">
+                    <form action="/techSecy/approved" method="post">
+                        <button>Approve</button>
+                    </form>
+                    <form action="/techSecy/requests/<%= request._id %>" method="delete">
+                        <button>Decline</button>
+                    </form> -->
+                </a>
+            <% }) %>
+        <% } else { %>
+            <p>There are no requests.</p>
+        <% } %>
+
+    </div>
+</body>
+</html>

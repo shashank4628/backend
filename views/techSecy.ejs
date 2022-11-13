@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+    </head>
+    <body>
+       
+                <% if (user) { %>
+                    <a href="/techSecy/logout">Log out</a>
+                    <% } else { %>
+                    <a href="/techSecy/login">Login</a>
+                    <% } %>
+                
+                <a href="/profile">Profile</a>
+           
+        <header>
+            <h1>Login using...</h1>
+        </header>
+        <main>
+            <a href="/techSecy/google">Google+</a>
+        </main>
+    </body>
+</html>
